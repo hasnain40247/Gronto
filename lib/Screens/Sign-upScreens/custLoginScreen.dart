@@ -106,7 +106,7 @@ class _custLoginScreenState extends State<custLoginScreen> {
                             backCol: appYellow,
                             screenSize: screenSize,
                             onPress: () {Navigator.pushNamed(context, 'homeScreen');},
-                            text: "Sign Up",
+                            text: "Login",
                           )),
                         ],
                       ),
@@ -118,11 +118,12 @@ class _custLoginScreenState extends State<custLoginScreen> {
                       alignment: Alignment.bottomCenter,
                       child: RichText(
                         text: TextSpan(
-                            text: "Already have an account?",
+                            text: "Don't have an account?",
                             style: poppinsStyle.copyWith(fontSize: 12),
                             children: [
                               TextSpan(
-                                  text: " Login",
+
+                                  text: " Sign up",
                                   style: TextStyle(color: appYellow))
                             ]),
                       ),

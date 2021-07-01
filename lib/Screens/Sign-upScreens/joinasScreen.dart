@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:gronto/Components/buttonLogin.dart';
 import 'package:gronto/Components/customApp.dart';
-import 'package:gronto/Screens/partnerRegisterScreen.dart';
+import 'package:gronto/Screens/Sign-upScreens/partnerRegisterScreen.dart';
 import 'package:gronto/textStyles/poppinStyle.dart';
 
 class joinasScreen extends StatelessWidget {
