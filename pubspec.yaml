@@ -52,6 +52,7 @@ flutter:
      - assets/images/rect.png
      - assets/images/rect2.png
 
+
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 
@@ -72,8 +73,7 @@ flutter:
      - family: MyFlutterApp
        fonts:
          - asset: assets/fonts/MyFlutterApp.ttf
-  #       - asset: fonts/TrajanPro_Bold.ttf
-  #         weight: 700
-  #
+
+
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

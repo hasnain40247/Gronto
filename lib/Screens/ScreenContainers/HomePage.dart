@@ -19,7 +19,8 @@ class _HomePageState extends State<HomePage> {
     return SafeArea(
         top: false,
         bottom: false,
-        child: Container(
+        child:
+        Container(
           height: screenSize.height,
           width: screenSize.width,
           child: ListView(
