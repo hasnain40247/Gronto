@@ -18,7 +18,7 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   int _currentIndex=0;
   List _screens=[HomePage(),CategoryPage(),ShoppingList(),AccountPage()];
-  List _appBars=[homeAppbar(),CategoryAppbar(),CustomApp(),CustomApp()];
+  List _appBars=[homeAppbar(),CategoryAppbar(),CategoryAppbar(text1: "Shopping", text2: " List", color1: appYellow , color2:appBlack),accAppbar()];
 
   void _updateIndex(int value) {
     setState(() {

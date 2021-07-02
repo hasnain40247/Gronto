@@ -11,14 +11,13 @@ class ShoppingList extends StatefulWidget {
 class _ShoppingListState extends State<ShoppingList> {
   @override
   Widget build(BuildContext context) {
-    return  SafeArea(
-      top: false,
-      bottom: false,
-      child: Center(
-        child: Container(
-          child: Text("Shopping List", style: poppinsStyle.copyWith(fontSize: 100),),
-        ),
-      ),
-    );
+    Size screenSize = MediaQuery.of(context).size;
+    var h = screenSize.height;
+    var w = screenSize.width;
+    Orientation orientation = MediaQuery.of(context).orientation;
+    return SafeArea(
+        top: false,
+        bottom: false,
+        child:Text("Shopping List",style: poppinsStyle.copyWith(fontSize: 35),));
   }
 }

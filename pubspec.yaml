@@ -52,6 +52,7 @@ flutter:
      - assets/images/
      - assets/images/rect.png
      - assets/images/rect2.png
+     - assets/images/mainLogo2.png
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
