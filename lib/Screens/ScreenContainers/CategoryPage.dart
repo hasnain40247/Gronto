@@ -35,6 +35,7 @@ class _CategoryPageState extends State<CategoryPage> {
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(15),
                       child: ExpansionTile(
+                        backgroundColor: Colors.white,
                         title: Text(
                           "Fruits",
                           style: poppinsStyle.copyWith(

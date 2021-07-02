@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gronto/Components/buttonLogin.dart';
 import 'package:gronto/Components/customApp.dart';
+import 'package:gronto/Screens/MainScreens/homeScreen.dart';
 import 'package:gronto/textStyles/poppinStyle.dart';
 import 'package:gronto/widgetStyles/textfieldStyle.dart';
 
@@ -105,7 +106,8 @@ class _custLoginScreenState extends State<custLoginScreen> {
                             wfactor: 0.5,
                             backCol: appYellow,
                             screenSize: screenSize,
-                            onPress: () {Navigator.pushNamed(context, 'homeScreen');},
+                            onPress: () {
+                            Navigator.pushReplacement(context, MaterialPageRoute(builder: (BuildContext context) => Home()));},
                             text: "Login",
                           )),
                         ],

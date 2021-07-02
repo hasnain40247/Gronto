@@ -18,6 +18,7 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   int _currentIndex=0;
   List _screens=[HomePage(),CategoryPage(),ShoppingList(),AccountPage()];
+  List _appBars=[homeAppbar(),CategoryAppbar(),CustomApp(),CustomApp()];
 
   void _updateIndex(int value) {
     setState(() {
@@ -27,9 +28,14 @@ class _HomeState extends State<Home> {
 
   @override
   Widget build(BuildContext context) {
+    Size screenSize = MediaQuery.of(context).size;
+    var h = screenSize.height;
+    var w = screenSize.width;
     return WillPopScope(
       onWillPop: () async => false,
       child: Scaffold(
+        backgroundColor: Colors.white,
+        appBar: _appBars[_currentIndex],
         body: _screens[_currentIndex],
         bottomNavigationBar: Container(
             decoration: BoxDecoration(

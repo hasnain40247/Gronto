@@ -29,6 +29,7 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   flutter_svg: ^0.22.0
+  flappy_search_bar: ^1.7.2
 
 
 dev_dependencies:
@@ -73,6 +74,11 @@ flutter:
      - family: MyFlutterApp
        fonts:
          - asset: assets/fonts/MyFlutterApp.ttf
+
+     - family: AppIcons
+       fonts:
+         - asset: assets/fonts/AppIcons.ttf
+
 
 
   # For details regarding fonts from package dependencies,
