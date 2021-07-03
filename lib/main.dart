@@ -17,6 +17,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
+        fontFamily: "Poppins",
           splashColor: Colors.transparent,
           highlightColor: Colors.transparent,
           accentColor: appYellow,
@@ -33,3 +34,4 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
