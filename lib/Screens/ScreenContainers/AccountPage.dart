@@ -36,7 +36,7 @@ class _AccountPageState extends State<AccountPage> {
                       Text("Hello, Hasnain!",style: poppinsStyle.copyWith(fontSize: 25),),
                       ListTile(
                         contentPadding: EdgeInsets.only(right: 10),
-                        leading: Text("7032422042 | hnsikora@gmail.com"),
+                        leading: Text("7032422042 | hnsikora@gmail.com",style: TextStyle(color: Color(0xFF747373)),),
                         trailing: IconButton(onPressed: ()=>{}, icon: Icon(Icons.edit,color: appBlack, size: 20,)),
 
                       )
@@ -103,7 +103,7 @@ class AccountTiles extends StatelessWidget {
         tileColor: Colors.white,
         title: Text(
           text,
-          style: poppinsStyle.copyWith(fontWeight: FontWeight.normal),
+          style: poppinsStyle.copyWith(fontWeight: FontWeight.w700),
         ),
       ),
     );

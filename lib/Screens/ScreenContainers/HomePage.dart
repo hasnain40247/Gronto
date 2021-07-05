@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/painting.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:gronto/textStyles/poppinStyle.dart';
 
@@ -29,9 +30,9 @@ class _HomePageState extends State<HomePage> {
               Padding(
                 padding: EdgeInsets.only(top: w * 0.1, left: w * 0.1),
                 child: Text(
-                  "Great Deals and Offers!",
+                  "Great Deals and Offers",
                   style:
-                      poppinsStyle.copyWith(fontSize: 23, letterSpacing: 0.8),
+                      poppinsStyle.copyWith(fontSize: 19,fontWeight: FontWeight.w800, ),
                 ),
               ),
               Padding(
@@ -61,7 +62,7 @@ class _HomePageState extends State<HomePage> {
                 padding: EdgeInsets.only(top: w * 0.1, left: w * 0.1),
                 child: Text(
                   "Shop From Stores Nearby",
-                  style: poppinsStyle.copyWith(letterSpacing: 0.8),
+                  style: poppinsStyle.copyWith(fontSize: 19,fontWeight: FontWeight.w800,),
                 ),
               ),
               Padding(
@@ -141,7 +142,7 @@ class _HomePageState extends State<HomePage> {
                 padding: EdgeInsets.only(top: w * 0.1, left: w * 0.1),
                 child: Text(
                   "Shop By Categories",
-                  style: poppinsStyle.copyWith(letterSpacing: 0.8),
+                  style: poppinsStyle.copyWith(fontSize: 19,fontWeight: FontWeight.w800),
                 ),
               ),
               Padding(

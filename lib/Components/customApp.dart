@@ -69,7 +69,7 @@ class CategoryAppbar extends StatelessWidget with PreferredSizeWidget {
                 context, "homeScreen", (r) => false)),
         bottom: PreferredSize(
             preferredSize: Size.fromHeight(kToolbarHeight),
-            child: finalSearch(w: w)));
+            child: finalSearch(w: w,h:h)));
   }
 }
 
@@ -104,7 +104,7 @@ class homeAppbar extends StatelessWidget with PreferredSizeWidget {
         ),
         bottom: PreferredSize(
             preferredSize: Size.fromHeight(kToolbarHeight),
-            child: finalSearch(w: w)));
+            child: finalSearch(w: w,h: h,)));
     // PreferredSize(
     //     preferredSize: Size.fromHeight(kToolbarHeight),
     //     child: SizedBox(
@@ -118,10 +118,11 @@ class homeAppbar extends StatelessWidget with PreferredSizeWidget {
 class finalSearch extends StatelessWidget {
   const finalSearch({
     Key key,
-    @required this.w,
+    @required this.w, this.h,
   }) : super(key: key);
 
   final double w;
+  final double h;
 
   @override
   Widget build(BuildContext context) {
@@ -129,6 +130,7 @@ class finalSearch extends StatelessWidget {
       padding: const EdgeInsets.only(bottom:8.0),
       child: Container(
         width: w*0.95,
+           height: h*0.05,
 
            padding: const EdgeInsets.all(5),
           decoration: BoxDecoration(
@@ -147,17 +149,17 @@ class finalSearch extends StatelessWidget {
                       child: Icon(
                         AppIcons.vector,
                         color: appYellow,
-                        size: 18,
+                        size: 16,
                       ),
                     ),
                     Expanded(
                       child: Padding(
-                        padding: const EdgeInsets.only(top:8.0,right:8,bottom:8,left:10),
+                        padding: const EdgeInsets.only(top:4.0,right:8,bottom:4,left:10),
                         child: TextField(
                           // textAlign: TextAlign.center,
                           decoration: InputDecoration.collapsed(
                             hintText: 'Search for Products',
-                            hintStyle: poppinsStyle.copyWith(color: Color(0xFF979797),fontWeight: FontWeight.normal)
+                            hintStyle: poppinsStyle.copyWith(color: Color(0xFF979797),fontSize: 15, fontWeight: FontWeight.normal)
                           ),
                           onChanged: (value) {},
                         ),
